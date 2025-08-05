@@ -1,3 +1,49 @@
+// Task 1
+const sum=(numbers)=>{
+    let somme = 0;
+    for(let i = 0;i<numbers.length;i++){
+        somme += numbers[i]
+    }
+    return somme;
+}
+console.log(sum([4, 2, 7]));
+
+const countEven = (arr) => {
+  let count = 0;
+  for (let i=0;i<arr.length;i++) {
+    if (arr[i] % 2 === 0) {
+      count++;
+    }
+  }
+  return count;
+};
+
+console.log(countEven([10, 15, 22, 33, 40, 55, 60, 98 , 34]));
+
+const double = (numbers) =>{
+    for(let i =0; i<numbers.length; i++){
+        numbers[i]=numbers[i]*2
+    }
+    return numbers;
+}
+console.log(double([4, 2, 7]));
+
+// Task 2 - Socks Challenge
+const sockMerchant = (arr) => {
+  arr.sort((a, b) => a - b); 
+  let count = 0;
+
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] === arr[i + 1]) {
+      count++;
+      i++; 
+    }
+  }
+
+  return count;
+};
+console.log(sockMerchant([1, 1, 3, 1, 4, 4, 2, 2, 2]))
+
 /* Sort & Search */
 
 // Bubble Sort
